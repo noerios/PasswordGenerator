@@ -2,7 +2,7 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
-
+// defining characters, capitals, lowers, and numbers
 var specialCharacters = [
   '@',
   '%',
@@ -93,7 +93,7 @@ var questionPrompt = {
   length: "How long should the password be?"
 }
 
-// var displayPass = document.querySelector("#password");
+// functions for generating password and displaying errors
 function generatePassword() {
   var passLength = parseInt(prompt(questionPrompt.length))
   if(isNaN(passLength) === true){
@@ -115,7 +115,7 @@ function generatePassword() {
     return;
   } 
 
-
+//assigning criteria
 
 var password  = '';
 for(var i = 0; i < passLength; i++ ){
@@ -157,18 +157,4 @@ function writePassword() {
 generateBtn.onclick = writePassword;
 
 
-
-//my stuff
-
-
-
-
-
-// notes //
-
-//promt the user to select password criteria
-//prompt the user to select a length 8-10 characters
-//prompt the user to choose choose lowercase, uppercase, numeric, and/or special characters
-
-//generating a single random number between 1-9
 
