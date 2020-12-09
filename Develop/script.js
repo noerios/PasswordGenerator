@@ -90,7 +90,7 @@ var questionPrompt = {
   capital: "Should the password contain a capital letter?",
   special: "Should the password contain a special character?",
   lower: "Should the password contain a lower case letter?",
-  length: "How long should the password be?"
+  length: "How long should the password be (8-128 characters)?"
 }
 
 // functions for generating password and displaying errors
